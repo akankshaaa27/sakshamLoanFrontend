@@ -504,19 +504,22 @@ const BusinessLoanPage = () => {
           <p className="text-xl mb-8 max-w-2xl mx-auto">Get the funding you need to take your business to the next level</p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <motion.button
+              onClick={() => navigate("/contact")} // Navigate to contact page
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="bg-white text-indigo-600 font-semibold py-3 px-8 rounded-lg shadow-lg"
             >
               Apply Now
             </motion.button>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="border-2 border-white text-white font-semibold py-3 px-8 rounded-lg hover:bg-indigo-700 transition"
-            >
-              Contact Sales
-            </motion.button>
+          <motion.button
+  onClick={() => navigate("/form")} // Navigate to form page
+  whileHover={{ scale: 1.05 }}
+  whileTap={{ scale: 0.95 }}
+  className="border-2 border-white text-white font-semibold py-3 px-8 rounded-lg hover:bg-indigo-700 transition"
+>
+  Contact Sales
+</motion.button>
+
           </div>
         </div>
       </section>

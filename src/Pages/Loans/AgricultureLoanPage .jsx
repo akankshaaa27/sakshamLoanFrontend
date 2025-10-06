@@ -51,6 +51,8 @@ const AgricultureLoanPage = () => {
     }
   ];
 
+  const navigate = useNavigate();
+
   const loanPurposes = [
     {
       title: "Purchase Agricultural Land",
@@ -327,10 +329,12 @@ const AgricultureLoanPage = () => {
           <h2 className="text-3xl font-bold mb-6">Ready to Grow Your Farm?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">Get low-interest loans for all your agriculture needs</p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="bg-white text-green-600 font-semibold py-3 px-8 rounded-lg shadow-lg">
+            <motion.button onClick={() => navigate("/form")} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="bg-white text-green-600 font-semibold py-3 px-8 rounded-lg shadow-lg">
               Apply Now
             </motion.button>
-            <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="border-2 border-white text-white font-semibold py-3 px-8 rounded-lg hover:bg-green-700">
+            <motion.button 
+              onClick={() => navigate("/agriculturecal")}
+            whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="border-2 border-white text-white font-semibold py-3 px-8 rounded-lg hover:bg-green-700">
               Get Rate Quote
             </motion.button>
           </div>

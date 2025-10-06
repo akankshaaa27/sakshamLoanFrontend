@@ -181,10 +181,10 @@ const TermsAndConditions = () => {
                 For questions about these Terms, please contact:
               </p>
               <p className="text-gray-600 mt-2">
-                <strong>Email:</strong> legal@sakshamfinance.com<br />
-                <strong>Phone:</strong> +91-XXXXXXXXXX<br />
-                <strong>Address:</strong> Saksham Finance Ltd., Corporate Office, Mumbai, India - 400001
-              </p>
+                                <strong>Email:</strong> sakshamfinance@gmail.com<br />
+                                <strong>Phone:</strong> +91-7276240084<br />
+                                <strong>Address:</strong>Sr No. 19/1, Hingne Home Colony, Karve Nagar, Pune-411052
+                            </p>
             </section>
           </div>
         </motion.div>

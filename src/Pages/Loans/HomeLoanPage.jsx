@@ -530,6 +530,7 @@ const HomeLoanPage = () => {
           <p className="text-xl mb-8 max-w-2xl mx-auto">Get the best home loan rates and make your home ownership dream come true</p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <motion.button
+              onClick={() => navigate("/form")} // Navigate to form page
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="bg-white text-indigo-600 font-semibold py-3 px-8 rounded-lg shadow-lg"
@@ -537,6 +538,7 @@ const HomeLoanPage = () => {
               Apply Now
             </motion.button>
             <motion.button
+              onClick={() => navigate("/homecal")} // Navigate to calculator page
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="border-2 border-white text-white font-semibold py-3 px-8 rounded-lg hover:bg-indigo-700 transition"

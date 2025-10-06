@@ -432,6 +432,7 @@ const PersonalLoanPage = () => {
           <h2 className="text-3xl font-bold mb-6">Ready to Get Started?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">Apply for a personal loan today and get funds in your account within 24 hours</p>
           <motion.button
+              onClick={() => navigate("/form")} // Navigate to form page
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="bg-white text-indigo-600 font-semibold py-3 px-8 rounded-lg shadow-lg"

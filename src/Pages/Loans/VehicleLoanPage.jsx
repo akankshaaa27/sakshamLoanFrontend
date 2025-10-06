@@ -694,6 +694,7 @@ const VehicleLoanPage = () => {
           <h2 className="text-3xl font-bold mb-6">Drive Your Dream Vehicle Today</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">Get quick approvals and competitive rates for your perfect vehicle</p>
           <motion.button
+            onClick={()=>navigate('/form')}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="bg-white text-indigo-600 font-semibold py-3 px-8 rounded-lg shadow-lg"
